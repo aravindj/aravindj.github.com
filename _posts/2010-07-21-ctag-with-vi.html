@@ -1,0 +1,24 @@
+---
+layout: post
+title: "ctag with vi"
+category: 
+tags: []
+permalink: /blogposts/29-ctag-with-vi/
+---
+{% include JB/setup %} 
+<p><span style="color: #555555; font-family: Verdana, 'BitStream vera Sans', Helvetica, sans-serif; font-size: 12px; line-height: 17px;">
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">Are you a C programmer?? and do you use vi ?? Well then.This post may supplement you for enhancing your editor configuration so as to have an easy coding environment.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">Typically, a fairly good project will have multiple source files and header files organized into many folders like bin, src, header,obj etc. Its often the case that you may define a function anywhere and you may refer it at someother location. If you are a person like me, then surely you will forget the the things like place of the implementation and the things like parameters, return type etc. In those situations you have ctag to help you out.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">Supposing that you have a folder called &lsquo;project&rsquo; and within it you have multiple folders, .c files and .h files.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">Now change the dir to &ldquo;project&rdquo; and type</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">$ctag -f myproject_tag -R</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">This will create a tag file called myproject_tag.This file will contain the information about your protoypes and implementation of your function, info about global variables, macros etc. The -R indicates that it is &lsquo;recursive&rsquo;, so that, the tag file will include all info about all .c and .h files under the &lsquo;project&rsquo; folder hierarchy.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">Now we have created a tagfile.We have to integrate it with vi so that the vi can get to know those information.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">Now change to home directory and open the hidden file .vimrc (If its not there create it) and set the path to the tagfile which vi can search for.So now type,</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">set tags=/path-to-project-folder/myproject_tag</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">So now.. its set.Now go to one of your C file using vi and keep your cursor on a function call (whose implementation is in someother file) and press &ldquo;ctrl+]&rdquo;.It will take you to the implementation file.To get back to the original caller line press &ldquo;ctrl+t&rdquo;.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">You can set paths to multiple tag files in .vimrc, by separating those paths with a &lsquo;comma&rsquo;. Suppose you have two projects &ldquo;prj1&Prime; and &ldquo;prj2&Prime; and you would like to have tag files separately for each project.Then in that case a comma separated path can be used.Also make sure that you give absolute paths.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">Also, dont forget to run ctag again, when you have added a new thing (like function/global variable/whatever ).In that case you don&rsquo;t have to edit your .vimrc.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">Also know that this ctag has many variants, which can be used for many other programming languages and along with many other editors.</p>
+<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; text-align: justify; padding: 0px;">So..With this extra bit of info have a happy coding environment.(Sounds like an ad huh&nbsp;<img class="wp-smiley" style="max-width: 600px; padding: 0px; margin: 0px; border: 0px initial initial;" src="http://s2.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1253809441g" alt=":-)" />&nbsp;)</p>
+</span></p>
