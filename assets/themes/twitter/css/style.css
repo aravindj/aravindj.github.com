@@ -68,4 +68,11 @@ body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+.justify{
+    text-align : justify;
+}
+
+#photo{
+    border:1px solid #eeefff;
+}
