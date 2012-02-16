@@ -20,3 +20,5 @@ Love does not claim possession, but gives freedom
 
 The happiest people DO NOT necessarily have the BEST THINGS. They simply appreciate the things they have.
 
+Be who you are & say what you feel, because those who mind don't matter, and those who matter don't mind.
+
