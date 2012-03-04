@@ -22,3 +22,4 @@ The happiest people DO NOT necessarily have the BEST THINGS. They simply appreci
 
 Be who you are & say what you feel, because those who mind don't matter, and those who matter don't mind.
 
+Simple living and high thinking lead to fulfillment and freedom!
