@@ -41,5 +41,7 @@ title: Welcome!
             <img src="{{ BASE_PATH }}/images/feed-icon.png" height="32px" width="32px" />
         </a>
     </center>
+    Hi there! I am Aravind.I write software.I blog without direction.I read books occasionally.
+    I love creating things.
 </div>
 </div>
