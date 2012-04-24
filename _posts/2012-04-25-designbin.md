@@ -13,6 +13,6 @@ bottle.py, twitter bootstrap and amazon aws, I have created <a href="http://desi
 temporary design (html, css & image files) and get an url for those files, which you
 can share with people and get feedback.
 
-You can get to look at the code <a href="https://github.com/aravindj/Designbin">here</a>
+You can have a look at the code <a href="https://github.com/aravindj/Designbin">here</a>
 
 Try and see if its useful for you!
