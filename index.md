@@ -33,10 +33,6 @@ title: Welcome!
             <img src="{{ BASE_PATH }}/images/linkedin-icon.png" height="32px" width="32px" />
         </a>
         
-        <a href="mailto:aravindkumar.leo@gmail.com">
-            <img src="{{ BASE_PATH }}/images/mail-icon.png" height="32px" width="32px" />
-        </a>
-        
         <a href="http://feeds.feedburner.com/Aravindj">
             <img src="{{ BASE_PATH }}/images/feed-icon.png" height="32px" width="32px" />
         </a>
