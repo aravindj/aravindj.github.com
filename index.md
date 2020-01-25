@@ -13,9 +13,9 @@ title: Welcome!
   {% endfor %}
 </ul>
 </div>
-<div class="span5">
+<div class="span4">
     <center>
-        <img src="{{ BASE_PATH }}/images/aravindj.jpg" id="photo" />
+        <img src="{{ BASE_PATH }}/images/aravindj.jpg" class="img-thumbnail"  id="photo" height="70%" width="70%" />
         <br /><br />
         <a href="http://www.facebook.com/people/Aravind-Jayakumar/100000239415661">
             <img src="{{ BASE_PATH }}/images/facebook-icon.png" height="32px" width="32px" />
